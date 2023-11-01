@@ -1,0 +1,31 @@
+<!-- C4 PROGRAM2:2.Program to perform addition of 2 numbers
+DATE:27/10/2013  ANANDHU V POOVANKAL--> 
+
+<html>
+<head>
+<script>
+function addition()
+{
+var a = parseInt(document.getElementById("num1").value);
+var b = parseInt(document.getElementById("num2").value);
+var result = a + b;
+            document.getElementById("y").innerHTML= result;
+			console.log(a)
+}
+</script>
+</head>
+<body>
+<center>
+<h2 style="color:green;">ADDITION OF TWO NUMBERS</h2>
+<br>
+<br>
+<label>Enter the value of 1st number:
+<input type="text" id="num1"></label><br><br>
+<label>Enter the value of 2nd number:
+<input type="text" id="num2"></label><br><br>
+<button onclick="addition()">sum</button>
+<p id="y"></p>
+</center>
+</body>
+</html>
+
