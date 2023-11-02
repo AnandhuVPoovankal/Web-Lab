@@ -1,0 +1,40 @@
+<!-- C4 PROGRAM 6:Change the background color after clicking the button in JavaScript.
+DATE:02/11/2013  ANANDHU V POOVANKAL--> 
+<html>
+ 
+<head>
+    <title>
+        BackGround colour change
+    </title>
+</head>
+ 
+<body style="text-align:center;">
+    <h1 style="color:green;">
+        HELLO WORLD
+    </h1>
+ 
+    <h3 style="colour:red;">
+        Click  to change the background color
+    </h3>
+ 
+    <button style="color:grren;" onclick="myFunc()">
+        Click 
+    </button>
+ 
+    <h2 id="CLRCHNG" style="color:RED;"></h2>
+ 
+    <script>
+        let result = document.getElementById("CLRCHNG");
+ 
+        function changeColor(color) {
+            document.body.style.background = color;
+        }
+ 
+        function myFunc() {
+            changeColor('BLACK');
+            result.innerHTML = "Background Color changed";
+        }        
+    </script>
+</body>
+ 
+</html>
