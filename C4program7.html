@@ -1,0 +1,36 @@
+<!-- C4 PROGRAM 7:Write a web page that uses a prompt to ask the user what color they’d like the
+background of their paragraphs to be. It should then write a paragraph with the
+background set to the appropriate color.
+DATE:03/11/2013  ANANDHU V POOVANKAL--> 
+
+<html>
+<head>
+    <script>
+        function changeBackgroundColor() {
+            const colorInput = prompt("Enter a color name or a hexadecimal color code (e.g., 'red' or '#FF5733'):");
+            const paragraph = document.getElementById('paragraph');
+
+            if (colorInput) {
+                paragraph.style.backgroundColor = colorInput;
+            }
+        }
+    </script>
+</head>
+<body>
+<center>
+    <h1 style="color :green;"><u>change backgroud of paragraph</h1></u>
+
+    <p>Enter a color name or a hexadecimal color code (e.g., "red" or "yellow").</p>
+
+    <button onclick="changeBackgroundColor()">Set Background Color</button>
+	</center>
+
+    <p id="paragraph">JavaScript (/ˈdʒɑːvəskrɪpt/), often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2023, 98.7% of websites use JavaScript on the client side for webpage behavior,[10] often incorporating third-party libraries. All major web browsers have a dedicated JavaScript engine to execute the code on users' devices.
+
+JavaScript is a high-level, often just-in-time compiled language that conforms to the ECMAScript standard.[11] It has dynamic typing, prototype-based object-orientation, and first-class functions. It is multi-paradigm, supporting event-driven, functional, and imperative programming styles. It has application programming interfaces (APIs) for working with text, dates, regular expressions, standard data structures, and the Document Object Model (DOM).
+
+The ECMAScript standard does not include any input/output (I/O), such as networking, storage, or graphics facilities. In practice, the web browser or other runtime system provides JavaScript APIs for I/O..</p>
+
+    
+</body>
+</html>
